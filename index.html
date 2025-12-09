@@ -1674,15 +1674,14 @@
           <div class="faq-item
 
 
-   <!-- Contact Section -->
+ <!-- Contact Section -->
 <section id="contact" class="contact section dark-background">
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Contatti</h2>
-    <p>Raccontaci in breve il progetto che vuoi realizzare: ti risponderemo entro 24/48 ore con una proposta concreta.</p>
-  </div>
-  <!-- End Section Title -->
+    <p>Raccontaci brevemente il progetto che hai in mente: ti risponderemo entro 24/48 ore.</p>
+  </div><!-- End Section Title -->
 
   <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
 
@@ -1692,10 +1691,10 @@
         <div class="info-item d-flex">
           <i class="bi bi-geo-alt flex-shrink-0"></i>
           <div>
-            <h3>Sede operativa</h3>
-            <p>Italia – lavoro da remoto con clienti in tutta Italia.</p>
+            <h3>Sede</h3>
+            <p>Operiamo da remoto, lavorando con clienti in tutta Italia.</p>
           </div>
-        </div>
+        </div><!-- End Info Item -->
 
         <div class="info-item d-flex">
           <i class="bi bi-telephone flex-shrink-0"></i>
@@ -1703,7 +1702,7 @@
             <h3>WhatsApp / Telefono</h3>
             <p>+39 XXX XXX XXXX</p>
           </div>
-        </div>
+        </div><!-- End Info Item -->
 
         <div class="info-item d-flex">
           <i class="bi bi-envelope flex-shrink-0"></i>
@@ -1711,40 +1710,28 @@
             <h3>Email</h3>
             <p>ciao@creativelogicroom.it</p>
           </div>
-        </div>
+        </div><!-- End Info Item -->
 
-        <div class="info-item d-flex">
-          <i class="bi bi-clock flex-shrink-0"></i>
-          <div>
-            <h3>Tempi di risposta</h3>
-            <p>Di solito entro 24/48 ore lavorative.</p>
-          </div>
-        </div>
       </div>
 
       <div class="col-lg-7">
-        <!-- Puoi collegare questo form a un servizio esterno (es. Formspree, Tally) -->
-        <form action="#" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
           <div class="row gy-4">
 
             <div class="col-md-6">
               <input type="text" name="name" class="form-control" placeholder="Nome e cognome" required="">
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 ">
               <input type="email" class="form-control" name="email" placeholder="La tua email" required="">
             </div>
 
             <div class="col-md-12">
-              <input type="text" class="form-control" name="project_type" placeholder="Tipo di progetto (es. sito, chatbot, automazioni)" required="">
+              <input type="text" class="form-control" name="subject" placeholder="Tipo di progetto (es. sito, chatbot, automazioni)" required="">
             </div>
 
             <div class="col-md-12">
-              <input type="text" class="form-control" name="budget" placeholder="Budget indicativo o fascia (es. 500–1.000€)">
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Descrivi in poche righe cosa vorresti automatizzare o creare" required=""></textarea>
+              <textarea class="form-control" name="message" rows="6" placeholder="Descrivi in poche righe cosa vorresti realizzare o automatizzare" required=""></textarea>
             </div>
 
             <div class="col-md-12 text-center">
@@ -1757,20 +1744,19 @@
 
           </div>
         </form>
-      </div>
-      <!-- End Contact Form -->
+      </div><!-- End Contact Form -->
 
     </div>
 
   </div>
 
-</section>
-<!-- /Contact Section -->
+</section><!-- /Contact Section -->
+
 
 
   </main>
 
-  <footer id="footer" class="footer position-relative">
+ <footer id="footer" class="footer position-relative">
 
   <div class="container">
     <div class="row gy-5">
@@ -1780,12 +1766,14 @@
           <a href="#hero" class="logo d-flex align-items-center mb-3">
             <span class="sitename">Creative Logic Room</span>
           </a>
-          <p class="tagline">Soluzioni digitali e automazioni create con AI per PMI, freelance e studi professionali.</p>
+          <p class="tagline">
+            Soluzioni digitali e automazioni create con AI, pensate per PMI, freelance e studi professionali.
+          </p>
 
           <div class="social-links mt-4">
             <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
             <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            <a href="#" aria-label="Email"><i class="bi bi-envelope"></i></a>
+            <a href="mailto:ciao@creativelogicroom.it" aria-label="Email"><i class="bi bi-envelope"></i></a>
           </div>
         </div>
       </div>
@@ -1798,7 +1786,7 @@
               <ul class="list-unstyled">
                 <li><a href="#about">Chi siamo</a></li>
                 <li><a href="#how-it-works">Come funziona</a></li>
-                <li><a href="#contact">Contatti</a></li>
+                <li><a href="#faq">F.A.Q</a></li>
               </ul>
             </div>
             <div class="col-6 col-md-4">
@@ -1839,7 +1827,7 @@
           <div class="footer-bottom-content">
             <p class="mb-0">© <span class="sitename">Creative Logic Room</span>. Tutti i diritti riservati.</p>
             <div class="credits">
-              Sito creato con GitHub Pages e un tocco di AI.
+              Designed by <a href="https://lzitaliancraftbeer-coder.github.io/creativelogicroom.github.io/">Creative Logic Room</a>
             </div>
           </div>
         </div>
@@ -1848,6 +1836,7 @@
   </div>
 
 </footer>
+
 
 
   <!-- Scroll Top -->
