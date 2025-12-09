@@ -4845,28 +4845,3 @@ section,
 .portfolio-details .additional-context p:last-child {
   margin-bottom: 0;
 }
-
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
-@media (min-width: 992px) {
-  .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(360px, 1fr));
-    gap: 2rem;
-  }
-
-  .feature-item {
-    display: flex;
-    height: 100%;
-  }
-
-  .feature-item .f-body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-}
