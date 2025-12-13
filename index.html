@@ -2054,6 +2054,46 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('pilot-form');
+  const messageEl = document.getElementById('pilot-message');
+
+  if (!form) return;
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    messageEl.textContent = 'Invio in corso...';
+    messageEl.classList.remove('text-success', 'text-danger');
+
+    const formData = new FormData(form);
+    const action = form.getAttribute('action');
+
+    fetch(action, {
+      method: 'POST',
+      body: formData
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Errore di rete');
+        }
+        return response.json().catch(() => ({}));
+      })
+      .then(data => {
+        messageEl.textContent = 'Richiesta inviata con successo. Ti risponderò al più presto.';
+        messageEl.classList.add('text-success');
+        form.reset();
+      })
+      .catch(error => {
+        console.error(error);
+        messageEl.textContent = 'Si è verificato un errore durante l’invio. Riprova tra qualche minuto.';
+        messageEl.classList.add('text-danger');
+      });
+  });
+});
+</script>
+  
 </body>
 
 </html>
