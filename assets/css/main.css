@@ -1217,6 +1217,23 @@ section,
   }
 }
 
+/* Allinea i <button> con stile ghost agli <a> */
+button.btn-primary-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 500;
+  border: 1px solid currentColor;
+  background-color: transparent;
+}
+
+button.btn-primary-ghost:hover,
+button.btn-primary-ghost:focus {
+  text-decoration: none;
+}
+
 /*--------------------------------------------------------------
 # Featured Services Section
 --------------------------------------------------------------*/
