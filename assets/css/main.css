@@ -2484,19 +2484,26 @@ button.btn-primary-ghost:focus {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
+  /* AGGIUNGI QUESTE 3 RIGHE per centrare */
+  max-width: 900px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 @media (max-width: 1200px) {
   .features .feature-grid {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
   }
 }
 
 @media (max-width: 576px) {
   .features .feature-grid {
     grid-template-columns: 1fr;
+    max-width: 100%;
   }
 }
+
 
 .features .feature-item {
   position: relative;
